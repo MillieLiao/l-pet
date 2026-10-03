@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const outfits = {
-    original: { title: '日常毛衣', en: 'EVERYDAY L', caption: '还是你熟悉的那个 L。', alt: 'L 穿着驼色毛衣，戴着深灰圆眼镜', source: 'original.png' },
+    original: { title: '日常毛衣', en: 'EVERYDAY L', caption: '还是你熟悉的那个 L。', alt: 'L 穿着驼色毛衣，戴着深灰圆眼镜', source: 'original-hd.webp' },
     butler: { title: '小管家', en: 'LITTLE BUTLER', caption: '蝴蝶结系好了，今天也请多关照。', alt: 'L 戴着圆眼镜，穿黑白小管家服和奶油色围裙', source: 'butler.webp' },
     chef: { title: '小厨师', en: 'LITTLE CHEF', caption: '今天的小幸福，刚刚出炉。', alt: 'L 戴着圆眼镜和厨师帽，穿奶油色厨师服，手持锅铲', source: 'chef.webp' },
     cat: { title: '小猫咪', en: 'CAT-EARED L', caption: '听说，摸摸头就会开心一点。', alt: 'L 戴着猫耳和圆眼镜，穿驼色毛衣', source: 'cat.webp' },
