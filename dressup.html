@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f4ead9">
-  <meta name="description" content="给 L 换一套衣服：日常毛衣、小管家、小厨师、猫耳、兔兔和麻将服。">
+  <meta name="description" content="给 L 换一套衣服：日常毛衣、小管家、小厨师、小猫咪、兔兔、麻将服、小王子、小猪和小杀手，9 套搭配随心挑。">
   <title>L 的换装室 · 小小日常</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='10' fill='%23ce9a5d'/%3E%3Ctext x='10' y='25' font-family='Georgia,serif' font-size='27' fill='%232c2925'%3EL%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="dressup.css">
-  <script src="dressup.js" defer></script>
+  <script src="dressup.js?v=20261003-9" defer></script>
 </head>
 <body class="dressup-page">
   <a class="skip-link" href="#closet">跳到衣橱</a>
@@ -22,7 +22,7 @@
       <div class="room-heading"><div><p class="eyebrow">L'S LITTLE WARDROBE</p><h1>今天穿什么？</h1></div><p>点选一套，换个小心情。</p></div>
       <section class="dressing-room" aria-label="L 换装小游戏">
         <div class="fitting-card" id="fitting-card" data-background="honey">
-          <div class="fitting-top"><span class="pill">L 的试衣镜</span><select id="mobile-outfit" aria-label="选择 L 的服装"><option value="original">日常毛衣</option><option value="butler">小管家</option><option value="chef">小厨师</option><option value="cat">小猫咪</option><option value="bunny">兔兔套装</option><option value="mahjong">麻将小高手</option></select><span class="outfit-index" id="outfit-index">01 / 06</span></div>
+          <div class="fitting-top"><span class="pill">L 的试衣镜</span><select id="mobile-outfit" aria-label="选择 L 的服装"><option value="original">日常毛衣</option><option value="butler">小管家</option><option value="chef">小厨师</option><option value="cat">小猫咪</option><option value="bunny">兔兔套装</option><option value="mahjong">麻将小高手</option><option value="prince">小王子</option><option value="pig">小猪套装</option><option value="assassin">小杀手</option></select><span class="outfit-index" id="outfit-index">01 / 09</span></div>
           <div class="fitting-stage" id="fitting-stage" aria-busy="false">
             <span class="fitting-letter" aria-hidden="true">L</span>
             <img class="dressed-l" id="dressed-l" src="original.png" width="384" height="416" alt="L 穿着驼色毛衣，戴着深灰圆眼镜">
@@ -30,7 +30,7 @@
           <div class="fitting-caption"><span id="outfit-en">EVERYDAY L</span><h2 id="outfit-name">日常毛衣</h2><p id="outfit-caption">还是你熟悉的那个 L。</p></div>
         </div>
         <div class="closet-panel" id="closet">
-          <div class="closet-heading"><h2>小小衣橱</h2><span>6 套整套搭配</span></div>
+          <div class="closet-heading"><h2>小小衣橱</h2><span>9 套整套搭配</span></div>
           <div class="outfit-grid" role="group" aria-label="选择整套服装">
             <button class="outfit-card selected" data-outfit="original" aria-pressed="true"><span class="outfit-thumb"><img src="original.png" width="192" height="208" alt=""></span><span class="outfit-label">日常毛衣</span><small>熟悉又温暖</small><span class="outfit-check" aria-hidden="true">✓</span></button>
             <button class="outfit-card" data-outfit="butler" aria-pressed="false" disabled><span class="outfit-thumb"><img src="butler.webp" width="1024" height="1536" alt=""></span><span class="outfit-label">小管家</span><small>奶油色的蝴蝶结</small><span class="outfit-check" aria-hidden="true">✓</span></button>
@@ -38,6 +38,9 @@
             <button class="outfit-card" data-outfit="cat" aria-pressed="false" disabled><span class="outfit-thumb"><img src="cat.webp" width="1024" height="1536" alt=""></span><span class="outfit-label">小猫咪</span><small>今天也想被摸摸头</small><span class="outfit-check" aria-hidden="true">✓</span></button>
             <button class="outfit-card" data-outfit="bunny" aria-pressed="false" disabled><span class="outfit-thumb"><img src="bunny.webp" width="1024" height="1536" alt=""></span><span class="outfit-label">兔兔套装</span><small>靠可爱萌混过关</small><span class="outfit-check" aria-hidden="true">✓</span></button>
             <button class="outfit-card" data-outfit="mahjong" aria-pressed="false" disabled><span class="outfit-thumb"><img src="mahjong.webp" width="1024" height="1536" alt=""></span><span class="outfit-label">麻将小高手</span><small>绿衣服，好心情</small><span class="outfit-check" aria-hidden="true">✓</span></button>
+            <button class="outfit-card" data-outfit="prince" aria-pressed="false" disabled><span class="outfit-thumb"><img src="prince.webp" width="1024" height="1536" alt="" loading="lazy"></span><span class="outfit-label">小王子</span><small>小皇冠，闪闪发光</small><span class="outfit-check" aria-hidden="true">✓</span></button>
+            <button class="outfit-card" data-outfit="pig" aria-pressed="false" disabled><span class="outfit-thumb"><img src="pig.webp" width="1024" height="1536" alt="" loading="lazy"></span><span class="outfit-label">小猪套装</span><small>粉粉嫩嫩，圆滚滚</small><span class="outfit-check" aria-hidden="true">✓</span></button>
+            <button class="outfit-card" data-outfit="assassin" aria-pressed="false" disabled><span class="outfit-thumb"><img src="assassin.webp" width="1024" height="1536" alt="" loading="lazy"></span><span class="outfit-label">小杀手</span><small>黑衣潜行，酷酷出场</small><span class="outfit-check" aria-hidden="true">✓</span></button>
           </div>
           <button class="random-button" id="random-outfit" disabled>帮 L 挑一套</button>
           <fieldset class="background-picker"><legend>换个背景</legend><div class="background-options"><button data-background="honey" aria-pressed="true"><span class="swatch honey" aria-hidden="true"></span>奶油黄</button><button data-background="rose" aria-pressed="false"><span class="swatch rose" aria-hidden="true"></span>桃子粉</button><button data-background="blue" aria-pressed="false"><span class="swatch blue" aria-hidden="true"></span>天空蓝</button></div></fieldset>

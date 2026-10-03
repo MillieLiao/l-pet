@@ -6,7 +6,10 @@
     chef: { title: '小厨师', en: 'LITTLE CHEF', caption: '今天的小幸福，刚刚出炉。', alt: 'L 戴着圆眼镜和厨师帽，穿奶油色厨师服，手持锅铲', source: 'chef.webp' },
     cat: { title: '小猫咪', en: 'CAT-EARED L', caption: '听说，摸摸头就会开心一点。', alt: 'L 戴着猫耳和圆眼镜，穿驼色毛衣', source: 'cat.webp' },
     bunny: { title: '兔兔套装', en: 'BUNNY L', caption: '今天的任务：可爱地萌混过关。', alt: 'L 戴着圆眼镜，穿奶油色垂耳兔兔连体衣，双手托腮', source: 'bunny.webp' },
-    mahjong: { title: '麻将小高手', en: 'LUCKY LITTLE L', caption: '绿衣服穿上，好心情也跟着来了。', alt: 'L 戴着圆眼镜，穿绿色中式长袍，举着红中字麻将牌', source: 'mahjong.webp' }
+    mahjong: { title: '麻将小高手', en: 'LUCKY LITTLE L', caption: '绿衣服穿上，好心情也跟着来了。', alt: 'L 戴着圆眼镜，穿绿色中式长袍，举着红中字麻将牌', source: 'mahjong.webp' },
+    prince: { title: '小王子', en: 'LITTLE PRINCE', caption: '戴好小皇冠，今天也闪闪发光。', alt: 'L 戴着深灰圆眼镜和金色小皇冠，穿蓝金王子礼服与酒红披风', source: 'prince.webp' },
+    pig: { title: '小猪套装', en: 'PIGGY L', caption: '粉粉嫩嫩，快乐也圆滚滚。', alt: 'L 戴着深灰圆眼镜，黑色刘海露在粉色小猪连体衣的帽子里', source: 'pig.webp' },
+    assassin: { title: '小杀手', en: 'STEALTH L', caption: '悄悄出场，酷酷地陪着你。', alt: 'L 戴着深灰圆眼镜，穿黑色兜帽潜行服、手套和短靴，脸部完整露出', source: 'assassin.webp' }
   };
   const backgrounds = { honey: '奶油黄', rose: '桃子粉', blue: '天空蓝' };
   const ids = Object.keys(outfits);
@@ -51,7 +54,7 @@
         button.setAttribute('aria-pressed', String(active));
       });
       mobileOutfit.value = id;
-      document.getElementById('outfit-index').textContent = `${String(ids.indexOf(id) + 1).padStart(2, '0')} / 06`;
+      document.getElementById('outfit-index').textContent = `${String(ids.indexOf(id) + 1).padStart(2, '0')} / ${String(ids.length).padStart(2, '0')}`;
       document.getElementById('outfit-name').textContent = outfits[id].title;
       document.getElementById('outfit-en').textContent = outfits[id].en;
       document.getElementById('outfit-caption').textContent = outfits[id].caption;
