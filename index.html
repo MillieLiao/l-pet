@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4ead9">
+  <meta name="description" content="L 的小小日常：一位穿驼色毛衣的桌面伙伴。看看他的九种动作，一起慢下来。">
+  <title>L 的小小日常</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='10' fill='%23ce9a5d'/%3E%3Ctext x='10' y='25' font-family='Georgia,serif' font-size='27' fill='%232c2925'%3EL%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="l-sprites.webp" as="image">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#playground">跳到动作试玩</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="L 的小小日常首页"><span class="brand-mark">L</span><span>小小日常<small>A LITTLE COMPANION</small></span></a>
+      <span class="header-note">给忙碌的一天，留一点可爱。</span>
+      <nav class="header-links" aria-label="网站导航"><a class="header-link" href="dressup.html">L 的换装室</a><a class="header-link" href="#about">认识 L</a></nav>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div><p class="eyebrow">THE LITTLE WORLD OF L</p><h1 id="page-title">今天，也和 <em>L</em> 一起。</h1></div>
+        <p class="intro-copy">黑色刘海，圆圆眼镜。<br>还有那件熟悉的驼色毛衣。</p>
+      </section>
+
+      <section class="playground" id="playground" aria-label="L 动作试玩">
+        <div class="stage-card">
+          <div class="stage-topline"><span class="pill">L 的日常片段</span><select class="mobile-action" id="mobile-action" aria-label="选择 L 的动作"><option value="idle">发会儿呆</option><option value="right">向右走走</option><option value="left">向左走走</option><option value="waving">打个招呼</option><option value="jumping">向上跳跳</option><option value="failed">叹一口气</option><option value="waiting">等你一下</option><option value="running">认真打字</option><option value="review">给你点赞</option></select><span class="frame-label" id="frame-label" aria-hidden="true">01 / 06</span></div>
+          <div class="stage" id="stage">
+            <span class="stage-letter" aria-hidden="true">L</span>
+            <div class="stage-orbit" aria-hidden="true"></div>
+            <div class="sprite" id="sprite" role="img" aria-label="L 正在托腮待机"><img id="fallback-image" src="l-idle.png" alt="" width="192" height="208"></div>
+            <div class="ground" aria-hidden="true"></div>
+            <span class="stage-corner" aria-hidden="true">a little moment</span>
+          </div>
+          <div class="stage-bottomline">
+            <div><span class="state-kicker" id="state-en">IDLE</span><h2 id="state-title">发会儿呆</h2></div>
+            <p id="state-caption" aria-live="polite">不着急，陪你慢慢来。</p>
+          </div>
+          <p class="asset-error" id="asset-error" hidden>动画暂时未加载，请刷新页面重试。</p>
+        </div>
+
+        <aside class="control-panel" aria-labelledby="control-title">
+          <p class="eyebrow">PICK A LITTLE MOMENT</p>
+          <h2 id="control-title">L，今天想做什么？</h2>
+          <p class="panel-copy">选一个动作，看看他的日常。</p>
+          <div class="action-grid" role="group" aria-label="选择 L 的动作">
+            <button class="action active" data-action="idle" aria-pressed="true"><span class="action-no">01</span><span>发会儿呆<small>IDLE</small></span><span class="selected-mark" aria-hidden="true"></span></button>
+            <button class="action" data-action="right" aria-pressed="false"><span class="action-no">02</span><span>向右走走<small>RIGHT</small></span><span class="selected-mark" aria-hidden="true"></span></button>
+            <button class="action" data-action="left" aria-pressed="false"><span class="action-no">03</span><span>向左走走<small>LEFT</small></span><span class="selected-mark" aria-hidden="true"></span></button>
+            <button class="action" data-action="waving" aria-pressed="false"><span class="action-no">04</span><span>打个招呼<small>WAVING</small></span><span class="selected-mark" aria-hidden="true"></span></button>
+            <button class="action" data-action="jumping" aria-pressed="false"><span class="action-no">05</span><span>向上跳跳<small>JUMPING</small></span><span class="selected-mark" aria-hidden="true"></span></button>
+            <button class="action" data-action="failed" aria-pressed="false"><span class="action-no">06</span><span>叹一口气<small>FAILED</small></span><span class="selected-mark" aria-hidden="true"></span></button>
+            <button class="action" data-action="waiting" aria-pressed="false"><span class="action-no">07</span><span>等你一下<small>WAITING</small></span><span class="selected-mark" aria-hidden="true"></span></button>
+            <button class="action" data-action="running" aria-pressed="false"><span class="action-no">08</span><span>认真打字<small>WORKING</small></span><span class="selected-mark" aria-hidden="true"></span></button>
+            <button class="action" data-action="review" aria-pressed="false"><span class="action-no">09</span><span>给你点赞<small>REVIEW</small></span><span class="selected-mark" aria-hidden="true"></span></button>
+          </div>
+          <div class="playback" role="group" aria-label="动画播放控制">
+            <button class="play-button" id="play-toggle" aria-pressed="false"><svg id="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg><svg id="play-icon" viewBox="0 0 24 24" aria-hidden="true" hidden><path d="m8 5 11 7-11 7z"/></svg><span id="play-label">暂停动画</span></button>
+            <button class="step-button" id="step-frame" title="暂停并显示下一帧">下一帧<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 5 10 7-10 7zM19 5v14"/></svg></button>
+          </div>
+          <p class="play-note" id="play-note">动作循环播放，随时可以停下来。</p>
+        </aside>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about-label"><span class="eyebrow">MEET YOUR COMPANION</span><h2 id="about-title">小小的 L，<br>熟悉的陪伴。</h2></div>
+        <div class="about-body"><p>不是每一刻都要很忙。L 可以安静地托腮，也可以认真打字；有时跳一下，有时替你竖起大拇指。</p><div class="character-notes"><span>黑色短发</span><span>深灰圆眼镜</span><span>粉色腮红</span><span>驼色毛衣</span></div></div>
+      </section>
+    </main>
+    <footer><span>L · A little companion</span><p>这里是网页动作试玩，不会改变桌宠的状态或设置。</p><a href="#playground">再陪 L 一会儿</a></footer>
+  </div>
+</body>
+</html>
